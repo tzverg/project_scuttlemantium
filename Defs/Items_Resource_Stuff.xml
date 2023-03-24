@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Scuttlemantium</defName>
+    <label>scuttlemantium</label>
+    <description>A metal like substace comprised of adamantium and scuttle. Its origins are unknown. Most people find this material horrifying, but somebody find it fascinating.</description>
+    <graphicData>
+      <texPath>Things/Item/scuttlemantium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>32</MarketValue>
+      <Mass>0.15</Mass>
+      <StuffPower_Armor_Sharp>5.0</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>5.0</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.0</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.3</BluntDamageMultiplier>
+	  <WorkToMake>700</WorkToMake>
+	  <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.1</deepCommonality>
+    <deepCountPerPortion>1</deepCountPerPortion>
+    <deepLumpSizeRange>2~10</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(100,40,0)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>9.0</MaxHitPoints>
+        <Beauty>5.5</Beauty>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>0.5</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>ScuttlemantiumCloth</defName>
+    <label>sa-weave</label>
+    <description>Fabric spun from microfibers extracted from devilstrand mushrooms and combined with wires of scuttlemantium. It is very tough, good at insulating, and protects exceptionally well against flame. As a result of the scuttlemantium infued with it, the duablity and inulating ability of the fabric has been increased.</description>
+    <graphicData>
+      <texPath>Things/Item/sa-weave</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+	  <WorkToMake>1000</WorkToMake>
+	  <WorkToBuild>1000</WorkToBuild>
+      <MarketValue>45</MarketValue>
+      <Mass>0.032</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <StuffPower_Armor_Sharp>3.50</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>3.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>4.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>35</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>40</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.04</commonality>
+      <color>(100,40,0)</color>
+      <statFactors>
+        <Flammability>0.1</Flammability>
+        <MaxHitPoints>5.0</MaxHitPoints>
+        <Beauty>3.5</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>Make_Scuttlemantium</defName>
+		<label>Make 10 lumps of scuttlemantium</label>
+		<description>Process raw materials into 10 lumps of scuttlemantium alloy.</description>
+		<jobString>Manufacturing scuttlemantium.</jobString>			
+		<ingredients>
+			<li>
+			<filter>
+				<thingDefs>
+					<li>MorrowRim_Scuttle</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+			</li>
+			<li>
+			<filter>
+				<thingDefs>
+					<li>MorrowRim_Adamantium</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+			</li>
+						
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_Scuttle</li>			
+				<li>MorrowRim_Adamantium</li>					
+			</thingDefs>
+		</fixedIngredientFilter>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>				
+		<workAmount>7500</workAmount>
+		<workSkill>Crafting</workSkill>	
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+		<recipeUsers Inherit="false">
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+		<products>
+			<Scuttlemantium>10</Scuttlemantium>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>	
+		</skillRequirements>			
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>Make_ScuttlemantiumCloth</defName>
+		<label>Make 10 bundles of sa-weave</label>
+		<description>Process raw materials into 10 bundles of sa-weave</description>
+		<jobString>Manufacturing sa-weave.</jobString>			
+		<ingredients>
+			<li>
+			<filter>
+				<thingDefs>
+					<li>Scuttlemantium</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+			</li>
+			<li>
+			<filter>
+				<thingDefs>
+					<li>DevilstrandCloth</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+			</li>
+						
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Scuttlemantium</li>			
+				<li>DevilstrandCloth</li>					
+			</thingDefs>
+		</fixedIngredientFilter>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>				
+		<workAmount>15000</workAmount>
+		<workSkill>Crafting</workSkill>	
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<researchPrerequisite>Fabrication</researchPrerequisite>			
+		<recipeUsers Inherit="false">
+			<li>FabricationBench</li>
+		</recipeUsers>		
+		<products>
+			<ScuttlemantiumCloth>10</ScuttlemantiumCloth>
+		</products>
+		<skillRequirements>
+			<Crafting>15</Crafting>	
+		</skillRequirements>			
+	</RecipeDef>
+</Defs>

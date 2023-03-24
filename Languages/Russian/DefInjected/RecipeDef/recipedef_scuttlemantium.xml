@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<Make_Scuttlemantium.label>ректифицировать 10 комочков скатломантиума</Make_Scuttlemantium.label>
+	<Make_Scuttlemantium.description>Переработать сырье в 10 комочков скатломантиума. Для его получения необходимо создать специальный реагент из скаттла в перегонном кубе, после чего длительно вымачивать в нём мелкие осколки адамантия.</Make_Scuttlemantium.description>
+	<Make_Scuttlemantium.jobString>ректификация скатломантиума</Make_Scuttlemantium.jobString>
+	<Make_ScuttlemantiumCloth.label>сплести 10 пластинок скатломашёлка</Make_ScuttlemantiumCloth.label>
+	<Make_ScuttlemantiumCloth.description>Переработать сырье в 10 пластинок скатломашёлка. Для получения конечного продукта необходимо извлечь волокна дьявлонитника и сплести тончайшую проволоку из скатломантиума. После ректификации адамантиум теряет свою крепость и с ним становиться намного удобнее работать используя высокоточный станок. После получения волокон наступает трудоёмкий этап плетения полотна, но результат того стоит.</Make_ScuttlemantiumCloth.description>
+	<Make_ScuttlemantiumCloth.jobString>плетение скатломашёлка</Make_ScuttlemantiumCloth.jobString>
+</LanguageData>
