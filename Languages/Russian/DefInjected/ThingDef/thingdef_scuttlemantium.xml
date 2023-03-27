@@ -2,6 +2,8 @@
 <LanguageData>
 	<Scuttlemantium.label>скатломантиум</Scuttlemantium.label>
 	<Scuttlemantium.description>Это слегка обработанный адамантий. Для его получения необходимо создать специальный реагент из скаттла в перегонном кубе, после чего длительно вымачивать в нём мелкие осколки адамантия. Он черезвычайно крепок. Из него можно сделать все, для производства чего обычно используется металл, так-же возможно сплести проволоку для производства специализированного типа ткани с использованием дьявольской нити. Для производства нити необходимо обладать навыками высокоточного производства.</Scuttlemantium.description>
+	<Scuttlemantium.stuffProps.stuffAdjective>скатломантиума</Scuttlemantium.stuffProps.stuffAdjective>
 	<ScuttlemantiumCloth.label>скатломашёлк</ScuttlemantiumCloth.label>
 	<ScuttlemantiumCloth.description>Ткань, сплетенная из микроволокон, извлеченных из грибов дьявольского дерева и тончайшей проволокой из скатломантиума. Она невероятно прочная, хорошо изолирует и исключительно хорошо защищает от пламени. Благодаря тому, что в нее введен скатломантиум, немного изменились изоляционные свойства дьявольской нити.</ScuttlemantiumCloth.description>
+	<ScuttlemantiumCloth.stuffProps.stuffAdjective>скатломашёлка</ScuttlemantiumCloth.stuffProps.stuffAdjective>
 </LanguageData>
